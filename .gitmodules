@@ -1,0 +1,3 @@
+[submodule "auto_LiRPA"]
+	path = auto_LiRPA
+	url = https://github.com/KaidiXu/auto_LiRPA.git

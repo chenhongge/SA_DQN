@@ -1,0 +1,11 @@
+{
+    "env_id": "BankHeistNoFrameskip-v4",
+    "training_config": {
+        "env_params": {
+            "restrict_actions": true
+        },
+        "kappa": 0.02,
+        "lr": 1e-05,
+        "bound_solver": "pgd"
+    }
+}

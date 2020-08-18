@@ -1,0 +1,8 @@
+{
+    "env_id": "FreewayNoFrameskip-v4",
+    "training_config": {
+        "env_params": {
+            "crop_shift": 0
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "env_id": "PongNoFrameskip-v4",
+    "training_config": {
+        "env_params": {
+            "crop_shift": 10,
+            "restrict_actions": 4
+        }
+    }
+}

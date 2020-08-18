@@ -1,0 +1,17 @@
+{
+    "env_id": "RoadRunnerNoFrameskip-v4",
+    "training_config": {
+        "kappa": 0.01,
+        "attack_config": {
+            "params": {
+                "niters": 10
+            }
+        },
+        "adv_train": true,
+        "env_params": {
+            "crop_shift": 20,
+            "restrict_actions": true
+        },
+        "robust": false
+    }
+}
