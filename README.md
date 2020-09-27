@@ -5,7 +5,7 @@ Q Networks (SA-DQN).  SA-DQN includes a theoretically principled (based on
 SA-MDP) regularizer to obtain a DQN agent robust to noises and adversarial
 perturbations on state observations. See our paper ["Robust Deep Reinforcement
 Learning against Adversarial Perturbations on State
-Observations"](https://arxiv.org/pdf/2003.08938) for more details.
+Observations"](https://arxiv.org/pdf/2003.08938) for more details. This paper has been accepted by **NeurIPS 2020 ** as a **spotlight** presentation.
 
 Our DQN implementation is mostly a proof of concept, and does not include many
 advanced training techniques like Rainbow or C51. It is based on an implement of [RL-Adventure](https://github.com/higgsfield/RL-Adventure) We use
