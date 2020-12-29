@@ -15,7 +15,7 @@ perturbation analysis and interval bound propagation (IBP)).
 
 If you are looking for robust policy gradient algorithms for continous action
 space environments (e.g., agents for MuJoCo control tasks) please see our
-[SA-PPO repository](https://github.com/huanzhang12/SA_PPO).
+[SA-PPO](https://github.com/huanzhang12/SA_PPO) and [SA-DDPG](https://github.com/huanzhang12/SA_DDPG) repositories.
 
 ## SA-DQN Demo
 
