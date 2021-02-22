@@ -70,14 +70,14 @@ We list the performance of our pretrained SA-DQN (convex relaxation) models in t
 
 Our pretrained models can be obtained
 [here](http://download.huan-zhang.com/models/robust-drl/dqn/sa-dqn-models.tar.gz).
-Decompress the models after downloading them:
+Decompress the models after downloading them. **New: We provided our pretrained SA-DQN (convex relaxation) and SA-DQN (PGD) models.**
 
 ```bash
 wget http://download.huan-zhang.com/models/robust-drl/dqn/sa-dqn-models.tar.gz
 tar xvf sa-dqn-models.tar.gz
 ```
 
-**New: We provided our pretrained SA-DQN (convex relaxation) and SA-DQN (PGD) models. **
+
 
 In the `models` directory, we provided a few pretrain models which can be
 evaluated using `test.py`. For example, to test the RoadRunner pretrained
