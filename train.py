@@ -548,6 +548,7 @@ def main(args):
                 state_tensor = torch.from_numpy(np.ascontiguousarray(state)).unsqueeze(0).cuda().to(torch.float32)
                 if dtype in UINTS:
                     state_tensor /= 255
+                ori_state_tensor = torch.clone(state_tensor)
                 action = current_model.act(state_tensor, act_epsilon)[0]
 
         # torch.cuda.synchronize()

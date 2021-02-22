@@ -1,6 +1,7 @@
 {
     "env_id": "BankHeistNoFrameskip-v4",
     "training_config": {
+        "dueling": false,
         "env_params": {
             "restrict_actions": true
         },

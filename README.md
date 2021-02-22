@@ -97,6 +97,8 @@ To test the Pong pretrained SA-DQN (PGD) model, simply run:
 ```bash
 # No attacks
 python test.py --config config/Pong_pgd.json test_config:load_model_path=models/Pong-pgd.model
+# 10-step PGD attack
+python test.py --config config/Pong_pgd.json test_config:load_model_path=models/Pong-pgd.model test_config:attack=true
 ```
 
 ## Training

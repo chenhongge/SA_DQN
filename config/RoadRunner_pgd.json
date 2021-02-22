@@ -1,6 +1,7 @@
 {
     "env_id": "RoadRunnerNoFrameskip-v4",
     "training_config": {
+        "dueling": false,
         "env_params": {
             "crop_shift": 20,
             "restrict_actions": true
