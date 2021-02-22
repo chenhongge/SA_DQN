@@ -8,8 +8,8 @@ Learning against Adversarial Perturbations on State
 Observations"](https://arxiv.org/pdf/2003.08938) for more details. This paper has been accepted by **NeurIPS 2020** as a **spotlight** presentation.
 
 Our DQN implementation is mostly a proof of concept, and does not include many
-advanced training techniques like Rainbow or C51. It is based on an implement of [RL-Adventure](https://github.com/higgsfield/RL-Adventure) We use
-[auto_LiRPA](https://github.com/KaidiXu/auto_LiRPA). as a sub-module to compute
+advanced training techniques like Rainbow or C51. It is based on an implement of [RL-Adventure](https://github.com/higgsfield/RL-Adventure). We use
+[auto_LiRPA](https://github.com/KaidiXu/auto_LiRPA) as a sub-module to compute
 convex relaxations of neural networks (which supports forward, backward mode
 perturbation analysis and interval bound propagation (IBP)).
 
@@ -50,7 +50,7 @@ more advanced DQN training methods (such as Rainbow and C51). It is possible to
 further improve SA-DQN performance by using more advanced training baselines or
 train more frames.
 
-We list the performance of our pretrained models in the Table below.
+We list the performance of our pretrained SA-DQN (convex relaxation) models in the Table below.
 
 | Environment | Evaluation         | Vanilla DQN | SA-DQN (convex relaxation) |
 |-------------|--------------------|:-----------:|:--------------------------:|
@@ -77,9 +77,11 @@ wget http://download.huan-zhang.com/models/robust-drl/dqn/sa-dqn-models.tar.gz
 tar xvf sa-dqn-models.tar.gz
 ```
 
+**New: We provided our pretrained SA-DQN (convex relaxation) and SA-DQN (PGD) models. **
+
 In the `models` directory, we provided a few pretrain models which can be
 evaluated using `test.py`. For example, to test the RoadRunner pretrained
-SA-DQN model, simply run:
+SA-DQN (convex) model, simply run:
 
 ```bash
 # No attacks
@@ -88,6 +90,13 @@ python test.py --config config/RoadRunner_cov.json test_config:load_model_path=m
 python test.py --config config/RoadRunner_cov.json test_config:load_model_path=models/RoadRunner-convex.model test_config:attack=true
 # 50-step PGD attack
 python test.py --config config/RoadRunner_cov.json test_config:load_model_path=models/RoadRunner-convex.model test_config:attack=true test_config:attack_config:params:niters=50
+```
+
+To test the Pong pretrained SA-DQN (PGD) model, simply run:
+
+```bash
+# No attacks
+python test.py --config config/Pong_pgd.json test_config:load_model_path=models/Pong-pgd.model
 ```
 
 ## Training
